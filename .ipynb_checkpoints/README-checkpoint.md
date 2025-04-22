@@ -1,6 +1,3 @@
-# ML-ICTR
-Deep Learning model trained on cifar10 and cifar100
-
 # 深度学习模型在CIFAR-10、CIFAR-100数据集的实践
 本实验中包含的模型有DenseNet，EfficientNet、MobileNet、ResNet18、ResNet50、SENet、ShuffleNet、VGG19、ViT-plain以及独自创新的ML-ICTR模型。
 

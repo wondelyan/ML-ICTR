@@ -1,0 +1,8 @@
+numpy
+pandas
+fvcore
+einops
+odach
+timm==1.0.15
+torch==2.0.0
+torchvision==0.15.1
