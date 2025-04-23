@@ -3,7 +3,7 @@ from torch import nn, Tensor
 from torch.nn import functional as F
 from typing import Optional
 import fvcore.nn.weight_init as weight_init
-from models.cltr.postion_embedding import PositionEmbeddingSine
+from models.ictr.postion_embedding import PositionEmbeddingSine
 
 
 class SelfAttentionLayer(nn.Module):
@@ -259,10 +259,11 @@ class Cls_Head(nn.Module):
         # 分类头
         self.classifier = nn.Sequential(
             nn.LayerNorm(hidden_dim),
-            nn.Linear(hidden_dim, 1024),
-            nn.ReLU(),
-            nn.LayerNorm(1024),
-            nn.Linear(1024, 100)
+            # nn.Linear(hidden_dim, 1024),
+            # nn.ReLU(),
+            # nn.LayerNorm(1024),
+            # nn.Linear(1024, 100)
+            nn.linear(hidden_dim, num_classes)
         )
 
     def forward(self, features):

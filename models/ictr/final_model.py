@@ -4,8 +4,8 @@ import timm
 import torch.nn as nn
 import torch.nn.functional as F
 # from models.vit_backbone import ViT
-from models.cltr.simpleFPN_neck import SimpleFPN
-from models.cltr.classification_head import Cls_Head
+from models.ictr.simpleFPN_neck import SimpleFPN
+from models.ictr.classification_head import Cls_Head
 
 
 class F_Model(nn.Module):
